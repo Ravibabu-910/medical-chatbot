@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical AI Assistant</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🩺 MedAI</h2>
+      <p>Your Health Assistant</p>
+
+      <div class="status">
+        <span class="dot"></span>
+        Server Online
+      </div>
+
+      <div class="tips">
+        <h4>Tips</h4>
+        <ul>
+          <li>Ask about diseases</li>
+          <li>Check medicines</li>
+          <li>Know symptoms</li>
+          <li>Prevention advice</li>
+        </ul>
+      </div>
+    </aside>
+
+
+    <!-- Main Chat Area -->
+    <main class="chat-area">
+
+      <header class="chat-header">
+        <h3>Medical AI Chatbot</h3>
+        <span>Powered by RAG + AI</span>
+      </header>
+
+
+      <!-- Messages -->
+      <div id="chat-box" class="chat-box"></div>
+
+
+      <!-- Input -->
+      <div class="input-area">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Ask your medical question..."
+          autocomplete="off"
+        />
+
+        <button id="send-btn">➤</button>
+      </div>
+
+    </main>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

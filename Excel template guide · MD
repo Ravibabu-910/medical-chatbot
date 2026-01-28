@@ -1,0 +1,65 @@
+# Example Excel Template
+
+This shows the structure your Excel file should have.
+
+## Recommended Column Names
+
+The system automatically detects these patterns:
+
+### Medical Entities
+- **Disease/Diagnosis**: Disease, Diagnosis, Condition, Illness
+- **Medicine/Drug**: Medicine, Drug, Medication, Treatment Drug
+- **Symptoms**: Symptoms, Signs, Symptom, Clinical Signs
+- **Procedure**: Procedure, Treatment, Therapy, Intervention
+- **Dosage**: Dosage, Dose, Strength
+- **Side Effects**: Side Effects, Adverse Effects, Complications
+
+## Example Sheet Structures
+
+### Sheet 1: Diseases
+| Disease | Symptoms | Primary Medicine | Alternative Medicine | Notes |
+|---------|----------|-----------------|---------------------|--------|
+| Influenza | Fever, Cough, Body Ache | Paracetamol | Ibuprofen | Rest and fluids |
+| Type 2 Diabetes | High blood sugar, Fatigue | Metformin | Glipizide | Monitor glucose |
+| Hypertension | High BP, Headache | Amlodipine | Lisinopril | Low salt diet |
+
+### Sheet 2: Medicines
+| Medicine | Indication | Dosage | Side Effects | Contraindications |
+|----------|------------|--------|--------------|-------------------|
+| Metformin | Diabetes | 850mg twice daily | Nausea, Diarrhea | Kidney disease |
+| Paracetamol | Pain, Fever | 500mg every 6 hours | Rare: Liver damage | Liver disease |
+| Amlodipine | Hypertension | 5-10mg once daily | Swelling, Dizziness | Severe hypotension |
+
+### Sheet 3: Symptoms to Disease
+| Symptom | Possible Diseases | Urgency | Red Flags |
+|---------|------------------|---------|-----------|
+| Fever | Flu, Infection, COVID-19 | Medium | Persistent >3 days |
+| Chest Pain | Heart Attack, Angina, GERD | High | Radiating pain |
+| Headache | Migraine, Tension, Hypertension | Low | Sudden severe onset |
+
+## Tips for Best Results
+
+1. **Multiple Sheets**: Use different sheets for different aspects (diseases, medicines, procedures)
+2. **Clear Relationships**: Place related information in the same row
+3. **Consistent Naming**: Use consistent terminology across sheets
+4. **Rich Information**: More details = better answers
+5. **Avoid Empty Cells**: Fill in as much information as possible
+
+## What the System Does
+
+1. **Reads all sheets** from your Excel file
+2. **Extracts entities**: Diseases, medicines, symptoms, etc.
+3. **Creates relationships**: "Disease X is treated by Medicine Y"
+4. **Builds graph**: Connects related concepts
+5. **Generates embeddings**: For fast similarity search
+6. **Detects communities**: Groups related medical concepts
+
+## Example Excel to Download
+
+We recommend creating your Excel with:
+- Multiple sheets for organization
+- Clear, descriptive column headers
+- Complete information in each row
+- Related information grouped together
+
+The system is flexible and will work with various formats!
